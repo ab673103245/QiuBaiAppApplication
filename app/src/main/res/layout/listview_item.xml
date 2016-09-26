@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="match_parent"
+    android:layout_marginTop="10dp"
+    android:descendantFocusability="blocksDescendants"
+    android:layout_height="wrap_content">
+
+
+    <ImageView
+        android:id="@+id/iv_userface"
+        android:layout_width="58dp"
+        android:padding="5dp"
+        android:src="@mipmap/ic_launcher"
+        android:layout_marginLeft="8dp"
+
+        android:layout_height="58dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:id="@+id/tv_username"
+        android:text="fsfsf"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@id/iv_userface"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:id="@+id/iv_type"
+        android:layout_width="46dp"
+        android:padding="8dp"
+        android:src="@mipmap/ic_launcher"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="50dp"
+        android:layout_height="46dp" />
+
+    <TextView
+        android:id="@+id/tv_type"
+        android:layout_width="wrap_content"
+        android:text="fsfsfsf"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tv_content"
+        android:text="ewrewrew"
+        android:layout_below="@id/iv_userface"
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="15dp"
+
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:id="@+id/iv_content"
+        android:src="@mipmap/ic_launcher"
+        android:layout_width="wrap_content"
+        android:layout_below="@id/tv_content"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/tv_count_fun"
+        android:text="ppp"
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/iv_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tv_count_comments"
+        android:layout_below="@id/iv_content"
+        android:text="000"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@id/tv_count_fun"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_marginTop="5dp"
+        android:id="@+id/tv_count_share"
+        android:layout_below="@id/iv_content"
+        android:text="fffff0"
+        android:layout_toRightOf="@id/tv_count_comments"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ImageButton
+        android:layout_width="56dp"
+        android:id="@+id/ib_good"
+        android:onClick="good_click"
+        android:src="@drawable/a4"
+        android:scaleType="centerCrop"
+        android:layout_below="@id/tv_count_share"
+        android:layout_height="56dp" />
+
+    <ImageButton
+        android:layout_width="56dp"
+        android:id="@+id/ib_nogood"
+        android:onClick="nogood_click"
+        android:src="@drawable/a8"
+        android:scaleType="centerCrop"
+        android:layout_below="@id/tv_count_share"
+        android:layout_toRightOf="@id/ib_good"
+        android:layout_height="56dp" />
+
+
+    <ImageButton
+        android:layout_width="56dp"
+        android:id="@+id/ib_log"
+        android:src="@drawable/a6"
+        android:scaleType="centerCrop"
+        android:layout_below="@id/tv_count_share"
+        android:layout_toRightOf="@id/ib_nogood"
+        android:layout_height="56dp" />
+
+
+    <ImageButton
+        android:layout_width="56dp"
+        android:id="@+id/ib_share"
+        android:src="@drawable/a10"
+        android:scaleType="centerCrop"
+        android:layout_below="@id/tv_count_share"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_height="56dp" />
+
+</RelativeLayout>
